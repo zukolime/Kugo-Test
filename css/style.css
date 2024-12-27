@@ -294,7 +294,7 @@ button {
 .main-section--bg {
   position: relative;
   background-image: url(../img/young-women.webp);
-  background-size: 1550px 603px;
+  background-size: 1454px 603px;
   background-position: right top;
   background-repeat: no-repeat;
   max-width: 86.25rem;
@@ -432,6 +432,10 @@ button {
 @media (max-width: 1440px) {
   html {
     font-size: 16px;
+  }
+
+  .main-section--bg {
+    background-size: 1110px 479px;
   }
 }
 
