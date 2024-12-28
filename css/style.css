@@ -24,6 +24,10 @@ button {
   border: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   max-width: 69.375rem;
   margin: 0 auto;
@@ -35,8 +39,26 @@ button {
   background: rgba(236, 243, 255, 1);
 }
 
+.bg {
+  max-width: 86.25rem;
+  min-height: 27.8125rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
 .button {
   border-radius: 5px;
+}
+
+.section-title {
+  color: #282739;
+  font-size: 2.0875rem;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 1.875rem;
 }
 
 /* HEADER START */
@@ -229,9 +251,10 @@ button {
   flex-shrink: 0;
 }
 
-.balance-img:hover {
-  width: 2rem;
-  height: 2rem;
+.balance-img:hover,
+.favorite-img:hover {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .balance-icon {
@@ -242,12 +265,6 @@ button {
 .favorite-img {
   width: 1.25rem;
   height: 1.25rem;
-  flex-shrink: 0;
-}
-
-.favorite-img:hover {
-  width: 2rem;
-  height: 2rem;
   flex-shrink: 0;
 }
 
@@ -297,12 +314,6 @@ button {
   background-size: 1454px 603px;
   background-position: right top;
   background-repeat: no-repeat;
-  max-width: 86.25rem;
-  min-height: 27.8125rem;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  margin: 0 auto;
 }
 
 .main-section--bg::before {
@@ -425,9 +436,333 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: background, color 0.5s;
+}
+
+.button-sign-up:hover {
+  background: #6f73ee;
+  color: #fff;
 }
 
 /* main-section END */
+
+/* section-test-drive-practice START */
+.section-test-drive-practice {
+  position: relative;
+  margin-bottom: 3.25rem;
+}
+
+.section-test-drive-practice__content {
+  max-width: 36.3125rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-test-drive-practice__text,
+.section-learn__text {
+  color: #282739;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 119%;
+  margin-bottom: 1.125rem;
+}
+
+.test-drive-practice__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.test-drive-practice__item {
+  display: flex;
+  align-items: center;
+  color: #282739;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.check-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  margin-right: 0.6875rem;
+}
+
+.item-bold {
+  font-weight: 500;
+}
+
+.test-drive-practice__image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 32.1875rem;
+  flex-shrink: 0;
+}
+
+.test-drive-practice__picture img {
+  border-radius: 10px;
+}
+/* section-test-drive-practice END */
+
+/* section-learn START */
+.section-learn {
+  position: relative;
+  margin-bottom: 3.25rem;
+}
+.learn__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 32.1875rem;
+  flex-shrink: 0;
+}
+
+.learn__image img {
+  border-radius: 10px;
+}
+
+.section-learn__content {
+  max-width: 36.5rem;
+  margin-left: 23.4rem;
+}
+
+.learn__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.learn__item {
+  display: flex;
+  align-items: center;
+  color: #282739;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: normal;
+}
+/* section-learn END */
+
+/* section-scooter-versions START */
+.section-scooter-versions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.25rem;
+}
+
+.wrapper-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scooter-versions__title {
+  text-align: center;
+  width: 45.75rem;
+  margin-bottom: 3.125rem;
+}
+
+.scooter-versions__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.875rem;
+}
+
+.scooter-versions__card {
+  width: calc((100% - 5.625rem) / 4);
+  border-radius: 10px;
+  border: 1.5px solid #eaebed;
+  transition: all 0.3s;
+}
+
+.scooter-versions__card:hover {
+  border: 1.5px solid #6f73ee;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(105%);
+}
+
+.no-webp .scooter-versions__card--image {
+  background-image: url(../img/kugoo.jpg);
+}
+
+.scooter-versions__card--image {
+  background-image: url(../img/kugoo.webp);
+  background-color: #f0f1f5;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 14.4375rem;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0.625rem;
+}
+
+.card-image__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0.6875rem;
+  margin-right: 0.7875rem;
+  padding-top: 0.875rem;
+}
+
+.beige-hit,
+.beige-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+
+.beige-hit {
+  width: 2.5625rem;
+  height: 1.5625rem;
+  background: #ee685f;
+}
+
+.beige-new {
+  width: 3.4375rem;
+  height: 1.5625rem;
+  background: #75d14a;
+}
+
+.add-to-compare-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: border 0.3s;
+}
+
+.add-to-compare-button:hover {
+  border: 2px solid #6f73ee;
+  filter: grayscale(0%);
+}
+
+.compare-icon {
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.compare-icon:hover {
+  filter: grayscale(0%);
+}
+
+.scooter-versions__card--content {
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem 1.5625rem 0 1.5625rem;
+}
+
+.scooter-versions__card--title {
+  color: #282739;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.125rem;
+}
+
+.scooter-versions__card--info {
+  display: flex;
+  flex-direction: column;
+}
+
+.scooter-versions__card--specification-list {
+  columns: 2 auto;
+  margin-bottom: 1.5625rem;
+}
+
+.specification-item {
+  display: flex;
+  align-items: center;
+  color: #5d6c7b;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: normal;
+  column-gap: 0.625rem;
+  padding-top: 1.125rem;
+}
+
+.specification-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.scooter-versions__card--controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.old-price {
+  color: #5d6c7b;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: line-through;
+}
+.current-price {
+  color: #282739;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.buttons-wrapper {
+  display: flex;
+  gap: 0.625rem;
+}
+.scooter-versions__card--button,
+.scooter-versions__favorite--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1.5px solid #eaebed;
+  flex-shrink: 0;
+  transition: border 0.5s;
+}
+
+.scooter-versions__card--button:hover,
+.scooter-versions__favorite--button:hover {
+  border: 1.5px solid #6f73ee;
+}
+
+.card-button-sign-up {
+  display: flex;
+  max-width: 12.875rem;
+  padding: 0.625rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  background: #6f73ee;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1.25rem;
+  transition: background 0.3s;
+}
+
+.card-button-sign-up:hover {
+  background: #9194ee;
+}
+/* section-scooter-versions END */
 
 @media (max-width: 1440px) {
   html {
@@ -474,5 +809,34 @@ button {
 
   .cart-link__text:hover {
     color: #282739;
+  }
+
+  .button-sign-up:hover {
+    background: #fff;
+    color: #6f73ee;
+  }
+
+  .scooter-versions__card:hover {
+    border: 1.5px solid #eaebed;
+    box-shadow: none;
+    transition: none;
+    transform: none;
+  }
+
+  .scooter-versions__card--button:hover,
+  .scooter-versions__favorite--button:hover {
+    border: 1.5px solid #eaebed;
+  }
+
+  .add-to-compare-button:hover {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .compare-icon:hover {
+    filter: grayscale(100%);
+  }
+
+  .card-button-sign-up:hover {
+    background: #6f73ee;
   }
 }
