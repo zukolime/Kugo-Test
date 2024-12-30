@@ -110,7 +110,7 @@
               <a href="#">Сотрудничество</a>
               <a href="#">Заказать звонок</a>
             </div>
-            <div class="header__links--socials">
+            <div class="header__links--messengers">
               <a href="#">
                 <svg class="viber">
                   <use href="./img/sprite.svg#viber"></use>
@@ -299,7 +299,7 @@
       <!-- section-learn START -->
       <section class="bg section-learn">
         <div class="learn__image">
-          <picture class="test-drive-practice__picture">
+          <picture class="learn__picture">
             <source
               type="image/webp"
               srcset="./img/E-Scooters_Thumb_Women.jpg"
@@ -369,7 +369,7 @@
             <div class="scooter-versions__card">
               <div class="scooter-versions__card--image">
                 <div class="card-image__items">
-                  <div class="beige-hit">ХИТ</div>
+                  <div class="badge-hit">ХИТ</div>
                   <button class="add-to-compare-button">
                     <svg class="compare-icon">
                       <use href="./img/sprite.svg#balance"></use>
@@ -434,7 +434,7 @@
             <div class="scooter-versions__card">
               <div class="scooter-versions__card--image">
                 <div class="card-image__items">
-                  <div class="beige-new">Новинка</div>
+                  <div class="badge-new">Новинка</div>
                   <button class="add-to-compare-button">
                     <svg class="compare-icon">
                       <use href="./img/sprite.svg#balance"></use>
@@ -499,7 +499,7 @@
             <div class="scooter-versions__card">
               <div class="scooter-versions__card--image">
                 <div class="card-image__items">
-                  <div class="beige-hit">ХИТ</div>
+                  <div class="badge-hit">ХИТ</div>
                   <button class="add-to-compare-button">
                     <svg class="compare-icon">
                       <use href="./img/sprite.svg#balance"></use>
@@ -564,7 +564,7 @@
             <div class="scooter-versions__card">
               <div class="scooter-versions__card--image">
                 <div class="card-image__items">
-                  <div class="beige-new">Новинка</div>
+                  <div class="badge-new">Новинка</div>
                   <button class="add-to-compare-button">
                     <svg class="compare-icon">
                       <use href="./img/sprite.svg#balance"></use>
@@ -635,14 +635,18 @@
         <div class="section-cta-bg">
           <div class="container">
             <div class="section-cta-wrapper">
-              <div class="section-cta__content">
-                <h2 class="section-title section-cta__content--title">
+              <form
+                action="handler.php"
+                method="POST"
+                class="section-cta__form"
+              >
+                <h2 class="section-title section-cta__form--title">
                   Нет нужной модели, которую хотите протестировать?
                 </h2>
-                <p class="section-cta__content--text">
+                <p class="section-cta__form--text">
                   Оставьте заявку, и менеджер подберет нужный самокат
                 </p>
-                <div class="section-cta__input-box">
+                <div class="input-box section-cta__input-box">
                   <input
                     type="tel"
                     name="user_phone"
@@ -674,9 +678,9 @@
                     >
                   </p>
                 </div>
-              </div>
-              <div class="section-cta__content__image">
-                <picture class="section-cta__content__picture">
+              </form>
+              <div class="section-cta__form__image">
+                <picture class="section-cta__form__picture">
                   <source
                     type="image/webp"
                     srcset="./img/portrait-cheerful.webp"
@@ -703,7 +707,11 @@
                 Оставьте свою почту и станьте первым, кто получит скидку на
                 новые самокаты
               </h3>
-              <div class="input-email__box">
+              <form
+                action="handler.php"
+                method="POST"
+                class="input-email__form"
+              >
                 <input
                   type="email"
                   name="email"
@@ -714,7 +722,7 @@
                 <button class="button button-sign-up button-submit-by-email">
                   Подписаться
                 </button>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -813,7 +821,7 @@
               </div>
             </div>
             <div class="order-call-link">
-              <a href="" class="order-call">Заказать звонок</a>
+              <a href="#" class="order-call">Заказать звонок</a>
             </div>
           </div>
         </div>
@@ -823,6 +831,226 @@
       <div class="container">
         <div class="seporator"></div>
       </div>
+
+      <!-- footer-middle START -->
+      <div class="footer-middle">
+        <div class="container">
+          <div class="footer-middle__wrapper">
+            <div class="logo footer-middle--logo">
+              <a href="#">Kugoo</a>
+            </div>
+            <div class="footer-middle__mobile-stores--buttons">
+              <a href="#" class="mobile-store-button googleplay-button">
+                <img src="./img/icons/google-play.svg" alt="google-play" />
+                <!-- <svg class="store-icon googleplay-icon">
+                  <use href="./img/sprite.svg#google-play"></use>
+                </svg> -->
+              </a>
+              <a href="#" class="mobile-store-button apple-store-button">
+                <img src="./img/icons/apple-store.svg" alt="apple-store" />
+                <!-- <svg class="store-icon apple-store-icon">
+                  <use href="./img/sprite.svg#app-store"></use>
+                </svg> -->
+              </a>
+            </div>
+            <div class="footer-middle__sociales--buttons">
+              <a href="#" class="social-button vk-botton">
+                <div class="social-image">
+                  <svg class="vk-icon">
+                    <use href="./img/sprite.svg#vk"></use>
+                  </svg>
+                </div>
+                <div class="social-button-description">
+                  <span class="social-button--text">Вконтакте</span>
+                  <span class="social-button--text-number">3 300</span>
+                </div>
+              </a>
+              <a href="#" class="social-button youtube-botton">
+                <div class="social-image">
+                  <svg class="youtube-icon">
+                    <use href="./img/sprite.svg#youtube"></use>
+                  </svg>
+                </div>
+                <div class="social-button-description">
+                  <span class="social-button--text">YouTube</span>
+                  <span class="social-button--text-number">3 603</span>
+                </div>
+              </a>
+              <a href="#" class="social-button telegram-botton">
+                <div class="social-image">
+                  <svg class="telegram-icon">
+                    <use href="./img/sprite.svg#telegram-2"></use>
+                  </svg>
+                </div>
+                <div class="social-button-description">
+                  <span class="social-button--text">Telegram</span>
+                  <span class="social-button--text-number">432</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer-middle END -->
+
+      <div class="container">
+        <div class="seporator"></div>
+      </div>
+
+      <!-- footer-bottom START -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom__wrapper">
+            <div class="details-and-policy__box">
+              <a href="#" class="details">Реквизиты</a>
+              <a href="#" class="policy">Политика конфиденциальности</a>
+            </div>
+
+            <div class="payment-methods__box">
+              <ul class="payment-methods__list">
+                <li class="payment-methods__item">
+                  <svg class="payment-icon">
+                    <use href="./img/sprite.svg#googlepay"></use>
+                  </svg>
+                </li>
+                <li class="payment-methods__item">
+                  <svg class="payment-icon">
+                    <use href="./img/sprite.svg#applepay"></use>
+                  </svg>
+                </li>
+                <li class="payment-methods__item">
+                  <svg class="payment-icon">
+                    <use href="./img/sprite.svg#visa-logo"></use>
+                  </svg>
+                </li>
+                <li class="payment-methods__item">
+                  <svg class="payment-icon">
+                    <use href="./img/sprite.svg#mastercard"></use>
+                  </svg>
+                </li>
+                <li class="payment-methods__item">
+                  <svg class="payment-icon">
+                    <use href="./img/sprite.svg#maestro"></use>
+                  </svg>
+                </li>
+                <li class="payment-methods__item">
+                  <svg class="payment-icon">
+                    <use href="./img/sprite.svg#webmoney"></use>
+                  </svg>
+                </li>
+                <li class="payment-methods__item">
+                  <svg class="payment-icon">
+                    <use href="./img/sprite.svg#qiwi"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+
+            <div class="online-chat__box">
+              <span class="online-chat__text">Online чат:</span>
+
+              <div class="footer__links--messengers">
+                <a href="#">
+                  <svg class="viber">
+                    <use href="./img/sprite.svg#viber"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="whatsapp">
+                    <use href="./img/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="telegram">
+                    <use href="./img/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer-bottom END -->
     </footer>
+
+    <!-- modal START -->
+    <div class="modal" id="preorder-modal">
+      <div class="close-button">
+        <a
+          href="#"
+          class="modal-close"
+          data-toggle="modal"
+          data-target="#preorder-modal"
+        >
+          <svg class="close-icon">
+            <use href="./img/sprite.svg#close"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="modal-container">
+        <div class="modal-content">
+          <div class="modal-dialog__top">
+            <h3 class="modal-title">Запишитесь натест-драйв электросамоката</h3>
+            <p class="modal-subtitle">и подберите модель для себя</p>
+            <p class="modal-text">
+              Менеджер свяжется с вами в течение 5 минут, чтобы согласовать
+              время.
+            </p>
+          </div>
+
+          <div class="modal-dialog__bottom">
+            <p class="modal-text-question">Как с вами удобнее связаться?</p>
+
+            <form action="handler.php" method="POST" class="modal-form">
+              <div class="input-box-wrapper">
+                <div class="input-box modal-input-box">
+                  <input
+                    id="modal-user-phone"
+                    type="tel"
+                    name="user_phone"
+                    class="input modal-input phone-mask"
+                    placeholder="+7 (___) __ - __ - __"
+                  />
+                </div>
+              </div>
+
+              <div class="modal-form-footer">
+                <button type="submit" class="button modal-form-button">
+                  Оформить предзаказ
+                </button>
+                <div
+                  class="checkbox-agreement__wrapper modal-checkbox-agreement__wrapper"
+                >
+                  <input
+                    class="input-checkbox"
+                    id="modal__input-checkbox"
+                    type="checkbox"
+                    name="agree"
+                    value="yes"
+                    checked
+                  />
+                  <label for="modal__input-checkbox"></label>
+                  <p class="checkbox-agreement__wrapper--text">
+                    Нажимая на кнопку, вы соглашаетесь на обработку персональных
+                    данных и
+                    <a href="#" class="link-to-policy modal__link-to-policy"
+                      >политикой конфиденциальности</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-image">
+          <picture class="modal-picture">
+            <source type="image/webp" srcset="img/modal-image.webp" />
+            <source type="image/jpeg" srcset="img/modal-image.jpg" />
+            <img src="img/modal-image.jpg" />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <!-- modal END -->
   </body>
 </html>
