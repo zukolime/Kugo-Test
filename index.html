@@ -138,6 +138,65 @@
     <!-- HEADER END -->
 
     <main class="main">
+      <section class="mobile__section-controls">
+        <div class="container">
+          <div class="section-controls__wrapper">
+            <div class="logo section-search--logo">
+              <a href="#">Kugoo</a>
+            </div>
+            <div class="mobile__controls">
+              <div class="balance-img">
+                <a href="#" title="Сравнить товары">
+                  <svg class="balance-icon">
+                    <use href="./img/sprite.svg#balance"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="favorite-img">
+                <a href="#" title="Перейти в Избранное">
+                  <svg class="favorite-icon-header">
+                    <use href="./img/sprite.svg#heart"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="cart-link__wrapper">
+                <a href="#" class="cart-link" title="Перейти в Корзину">
+                  <svg class="cart-icon">
+                    <use href="./img/sprite.svg#shopping-cart"></use>
+                  </svg>
+                  <span class="cart-link__text">Корзина</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mobile__section-search">
+        <div class="container">
+          <div class="section-search__wrapper">
+            <button class="button button-burger">
+              <div class="toggle-burger">
+                <div class="toggle-burger__line"></div>
+                <div class="toggle-burger__line"></div>
+                <div class="toggle-burger__line"></div>
+              </div>
+              <span class="button-burger__text">Каталог</span>
+            </button>
+            <div class="search-box">
+              <input
+                class="search-input"
+                type="text"
+                placeholder="Искать самокат KUGO"
+              />
+              <button class="search-button">
+                <svg class="search-icon" width="16" height="16">
+                  <use href="./img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- section-search START -->
       <section class="section-search">
         <div class="container">
@@ -246,6 +305,13 @@
       <section class="bg section-test-drive-practice">
         <div class="container">
           <div class="section-test-drive-practice__content">
+            <div class="test-drive-practice__image">
+              <picture class="test-drive-practice__picture">
+                <source type="image/webp" srcset="./img/E-Scooters_Thumb.jpg" />
+                <source type="image/jpg" srcset="/img/E-Scooters_Thumb.webp" />
+                <img src="E-Scooters_Thumb.jpg" />
+              </picture>
+            </div>
             <h2 class="section-title section-test-drive-practice__title">
               Определите максимально подходящую вам модель не теоретически, а на
               практике
@@ -283,14 +349,6 @@
                 характеристики и возможности модели.
               </li>
             </ul>
-
-            <div class="test-drive-practice__image">
-              <picture class="test-drive-practice__picture">
-                <source type="image/webp" srcset="./img/E-Scooters_Thumb.jpg" />
-                <source type="image/jpg" srcset="/img/E-Scooters_Thumb.webp" />
-                <img src="E-Scooters_Thumb.jpg" />
-              </picture>
-            </div>
           </div>
         </div>
       </section>
@@ -298,60 +356,65 @@
 
       <!-- section-learn START -->
       <section class="bg section-learn">
-        <div class="learn__image">
-          <picture class="learn__picture">
-            <source
-              type="image/webp"
-              srcset="./img/E-Scooters_Thumb_Women.jpg"
-            />
-            <source
-              type="image/jpg"
-              srcset="/img/E-Scooters_Thumb_Women.webp"
-            />
-            <img src="E-Scooters_Thumb_Women.jpg" />
-          </picture>
-        </div>
         <div class="container">
-          <div class="section-learn__content">
-            <h2 class="section-title section-learn__title">
-              Научим правильной и безопасной езде в городе вас или вашего
-              ребенка
-            </h2>
+          <div class="section-learn__wrapper">
+            <div class="section-learn__content">
+              <div class="learn__image">
+                <picture class="learn__picture">
+                  <source
+                    type="image/webp"
+                    srcset="./img/E-Scooters_Thumb_Women.jpg"
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="/img/E-Scooters_Thumb_Women.webp"
+                  />
+                  <img src="E-Scooters_Thumb_Women.jpg" />
+                </picture>
+              </div>
+              <h2 class="section-title section-learn__title">
+                Научим правильной и безопасной езде в городе вас или вашего
+                ребенка
+              </h2>
 
-            <p class="section-learn__text">На обучении специалист расскажет:</p>
+              <p class="section-learn__text">
+                На обучении специалист расскажет:
+              </p>
 
-            <ul class="learn__list">
-              <li class="learn__item">
-                <svg class="check-icon">
-                  <use href="./img/sprite.svg#checkcircle"></use>
-                </svg>
-                Как подготовить самокат к поездке;
-              </li>
-              <li class="learn__item">
-                <svg class="check-icon">
-                  <use href="./img/sprite.svg#checkcircle"></use>
-                </svg>
-                Как «завести» самокат;
-              </li>
-              <li class="learn__item">
-                <svg class="check-icon">
-                  <use href="./img/sprite.svg#checkcircle"></use>
-                </svg>
-                Как вести себя во время поездки и обезопасить себя и окружающих;
-              </li>
-              <li class="learn__item">
-                <svg class="check-icon">
-                  <use href="./img/sprite.svg#checkcircle"></use>
-                </svg>
-                Как складывать и раскладывать электросамокат;
-              </li>
-              <li class="learn__item">
-                <svg class="check-icon">
-                  <use href="./img/sprite.svg#checkcircle"></use>
-                </svg>
-                Как ухаживать за своим девайсом.
-              </li>
-            </ul>
+              <ul class="learn__list">
+                <li class="learn__item">
+                  <svg class="check-icon">
+                    <use href="./img/sprite.svg#checkcircle"></use>
+                  </svg>
+                  Как подготовить самокат к поездке;
+                </li>
+                <li class="learn__item">
+                  <svg class="check-icon">
+                    <use href="./img/sprite.svg#checkcircle"></use>
+                  </svg>
+                  Как «завести» самокат;
+                </li>
+                <li class="learn__item">
+                  <svg class="check-icon">
+                    <use href="./img/sprite.svg#checkcircle"></use>
+                  </svg>
+                  Как вести себя во время поездки и обезопасить себя и
+                  окружающих;
+                </li>
+                <li class="learn__item">
+                  <svg class="check-icon">
+                    <use href="./img/sprite.svg#checkcircle"></use>
+                  </svg>
+                  Как складывать и раскладывать электросамокат;
+                </li>
+                <li class="learn__item">
+                  <svg class="check-icon">
+                    <use href="./img/sprite.svg#checkcircle"></use>
+                  </svg>
+                  Как ухаживать за своим девайсом.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -365,6 +428,7 @@
               Сейчас для тест-драйва и обучения доступны следующие модели
             </h2>
           </div>
+
           <div class="scooter-versions__cards">
             <div class="scooter-versions__card">
               <div class="scooter-versions__card--image">
@@ -732,6 +796,102 @@
 
     <footer class="footer">
       <!-- footer-top START -->
+      <div class="mobile__footer-top">
+        <div class="container">
+          <div class="footer-top__wrapper">
+            <div class="goods-catalogue__wrapper">
+              <h4 class="footer-top--title goods-catalogue__wrapper--title">
+                Каталог товаров
+              </h4>
+              <ul class="footer-top__list goods-catalogue__wrapper--list">
+                <li
+                  class="footer-top__list--item goods-catalogue__wrapper--item"
+                >
+                  <a href="#">Электросамокаты</a>
+                </li>
+                <li
+                  class="footer-top__list--item goods-catalogue__wrapper--item"
+                >
+                  <a href="#">Электроскутеры</a>
+                </li>
+                <li
+                  class="footer-top__list--item goods-catalogue__wrapper--item"
+                >
+                  <a href="#">Электровелосипеды</a>
+                </li>
+                <li
+                  class="footer-top__list--item goods-catalogue__wrapper--item"
+                >
+                  <a href="#">Электровелосипеды</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="for-purchases__wrapper">
+              <h4 class="footer-top--title for-purchases__wrapper--title">
+                Покупателям
+              </h4>
+              <ul class="footer-top__list for-purchases__wrapper--list">
+                <li class="footer-top__list--item for-purchases__wrapper--item">
+                  <a href="#">Сервисный центр</a>
+                </li>
+                <li class="footer-top__list--item for-purchases__wrapper--item">
+                  <a href="#">Доставка и оплата</a>
+                </li>
+                <li class="footer-top__list--item for-purchases__wrapper--item">
+                  <a href="#">Рассрочка</a>
+                </li>
+                <li class="footer-top__list--item for-purchases__wrapper--item">
+                  <a href="#">Тест-драйв</a>
+                </li>
+                <li class="footer-top__list--item for-purchases__wrapper--item">
+                  <a href="#">Блог</a>
+                </li>
+                <li class="footer-top__list--item for-purchases__wrapper--item">
+                  <a href="#">Сотрудничество</a>
+                </li>
+                <li class="footer-top__list--item for-purchases__wrapper--item">
+                  <a href="#">Контакты</a>
+                </li>
+                <li class="footer-top__list--item for-purchases__wrapper--item">
+                  <a href="#">Акции</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contacts__box">
+            <div class="contacts__wrapper">
+              <h4 class="footer-top--title contacts__wrapper--title">
+                Контакты
+              </h4>
+              <div class="contacts-info__wrapper">
+                <div class="contacts-info__inner">
+                  <p class="contacts-info__inner--text">Call-центр</p>
+                  <a href="tel:+78005055461" class="contacts-info__inner--phone"
+                    >+7 (800) 505-54-61</a
+                  >
+                  <time class="contacts-info__inner--timing"
+                    >Пн-Вс 10:00 - 20:00</time
+                  >
+                </div>
+                <div class="contacts-info__inner">
+                  <p class="contacts-info__inner--text">Сервисный центр</p>
+                  <a href="tel:+74993507692" class="contacts-info__inner--phone"
+                    >+7 (499) 350-76-92</a
+                  >
+                  <time class="contacts-info__inner--timing"
+                    >Пн-Вс 10:00 - 20:00</time
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="order-call-link">
+              <a href="#" class="order-call">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="footer-top">
         <div class="container">
           <div class="footer-top__wrapper">
@@ -1052,5 +1212,9 @@
       </div>
     </div>
     <!-- modal END -->
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/just-validate.production.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
