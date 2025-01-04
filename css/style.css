@@ -862,8 +862,8 @@ input:focus {
   max-width: 38.3125rem;
   display: flex;
   flex-direction: column;
-  padding-top: 5.6rem;
-  padding-bottom: 4.775rem;
+  padding-top: 2.6rem;
+  padding-bottom: 1.775rem;
 }
 
 .section-cta__form--text {
@@ -982,7 +982,7 @@ input:focus {
 }
 
 .section-cta__form__image {
-  max-width: 28.325rem;
+  max-width: 23.325rem;
   width: 100%;
   position: absolute;
   right: 0;
@@ -1476,11 +1476,20 @@ footer {
   html {
     font-size: 18px;
   }
+
+  .section-cta__form {
+    padding-top: 3.6rem;
+    padding-bottom: 2.775rem;
+  }
 }
 
 @media (max-width: 1580px) {
   html {
     font-size: 17px;
+  }
+
+  .section-cta__form__picture img {
+    max-height: 27.8rem;
   }
 }
 
@@ -1491,6 +1500,19 @@ footer {
 
   .main-section--bg {
     background-size: 1100px 458px;
+  }
+
+  .section-cta__form {
+    padding-top: 5.6rem;
+    padding-bottom: 4.775rem;
+  }
+
+  .section-cta__form__image {
+    max-width: 28.325rem;
+  }
+
+  .section-cta__form__picture img {
+    max-height: 30.8rem;
   }
 }
 
@@ -1593,11 +1615,11 @@ footer {
   }
 
   .section-cta__form__image {
-    right: -69px;
+    max-width: 20.325rem;
   }
 
   .section-cta__form__picture img {
-    max-height: 23.4375rem;
+    max-height: 30.4375rem;
   }
 
   .contacts__wrapper {
