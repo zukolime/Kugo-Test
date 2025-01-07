@@ -294,7 +294,7 @@
                   <p class="benifit-text">Проверите лучшие самокаты в деле</p>
                 </div>
               </div>
-              <button class="button button-sign-up">Записаться</button>
+              <button type="submit" class="button button-sign-up">Записаться</button>
             </div>
           </div>
         </div>
@@ -488,7 +488,7 @@
                       </button>
                     </div>
                   </div>
-                  <button class="button card-button-sign-up">
+                  <button type="submit" class="button card-button-sign-up">
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -553,7 +553,7 @@
                       </button>
                     </div>
                   </div>
-                  <button class="button card-button-sign-up">
+                  <button type="submit" class="button card-button-sign-up">
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -618,7 +618,7 @@
                       </button>
                     </div>
                   </div>
-                  <button class="button card-button-sign-up">
+                  <button type="submit" class="button card-button-sign-up">
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -676,14 +676,14 @@
                           <use href="./img/sprite.svg#shopping-cart-2"></use>
                         </svg>
                       </button>
-                      <button class="scooter-versions__favorite--button">
+                      <button  class="scooter-versions__favorite--button">
                         <svg class="favorite-icon">
                           <use href="./img/sprite.svg#heart"></use>
                         </svg>
                       </button>
                     </div>
                   </div>
-                  <button class="button card-button-sign-up">
+                  <button type="submit" class="button card-button-sign-up">
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -699,12 +699,11 @@
         <div class="section-cta-bg">
           <div class="container">
             <div class="section-cta-wrapper">
-              <form
-                action="handler.php"
+              <form                 
+                action="phone-handler.php"
                 method="POST"
-                class="section-cta__form"
-              >
-                <h2 class="section-title section-cta__form--title">
+                class="section-cta__form">
+              		<h2 class="section-title section-cta__form--title">
                   Нет нужной модели, которую хотите протестировать?
                 </h2>
                 <p class="section-cta__form--text">
@@ -712,19 +711,19 @@
                 </p>
                 <div class="input-box section-cta__input-box">
                   <input
+                    id="userphone"
                     type="tel"
-                    name="user_phone"
-                    id="user-phone"
+                    name="user_phone"                    
                     class="input phone-mask"
                     placeholder="+7 (___) __ - __ - __"
                   />
-                  <button
+                  <button type="submit"
                     class="button card-button-sign-up card-button-sign-up-cta"
                   >
                     Оставить заявку на тест-драйв
                   </button>
                 </div>
-                <div class="checkbox-agreement__wrapper">
+                <div id="checkbox-agreement" class="checkbox-agreement__wrapper">
                   <input
                     class="input-checkbox"
                     id="input-checkbox"
@@ -732,6 +731,7 @@
                     name="agree"
                     value="yes"
                     checked
+                    required
                   />
                   <label for="input-checkbox"></label>
                   <p class="checkbox-agreement__wrapper--text">
@@ -766,28 +766,27 @@
       <section class="section-discount-offer">
         <div class="section-discount-offer__bg">
           <div class="container">
-            <div class="section-discount-offer__wrapper">
-              <h3 class="section-discount-offer__wrapper--title">
-                Оставьте свою почту и станьте первым, кто получит скидку на
-                новые самокаты
-              </h3>
-              <form
-                action="handler.php"
-                method="POST"
-                class="input-email__form"
-              >
-                <input
-                  type="email"
-                  name="email"
-                  id="user-email"
-                  class="input input-email"
-                  placeholder="Введите Ваш email"
-                />
-                <button class="button button-sign-up button-submit-by-email">
-                  Подписаться
-                </button>
-              </form>
-            </div>
+            <form 
+              id="email-form"
+              action="email-handler.php"
+              method="POST"
+              class="section-discount-offer__form">
+                <h3 class="section-discount-offer__form--title">
+                  Оставьте свою почту и станьте первым, кто получит скидку на
+                  новые самокаты
+                </h3>
+                <div class="input-email__box">
+                  <input  
+                    id="user-email"
+                    type="email"
+                    name="user_email"
+                    class="input input-email"
+                    placeholder="Введите Ваш email">
+                  <button type="submit" class="button button-sign-up button-submit-by-email">
+                    Подписаться
+                  </button>
+                </div>
+            </form>
           </div>
         </div>
       </section>
@@ -1161,14 +1160,14 @@
           <div class="modal-dialog__bottom">
             <p class="modal-text-question">Как с вами удобнее связаться?</p>
 
-            <form action="handler.php" method="POST" class="modal-form">
+            <form action="phone-handler.php" method="POST" class="modal-form" id="modal-form">
               <div class="input-box-wrapper">
                 <div class="input-box modal-input-box">
                   <input
                     id="modal-user-phone"
                     type="tel"
                     name="user_phone"
-                    class="input modal-input phone-mask"
+                    class="input modal-input phone-mask"                    
                     placeholder="+7 (___) __ - __ - __"
                   />
                 </div>
@@ -1188,6 +1187,7 @@
                     name="agree"
                     value="yes"
                     checked
+                    required
                   />
                   <label for="modal__input-checkbox"></label>
                   <p class="checkbox-agreement__wrapper--text">
@@ -1212,8 +1212,7 @@
       </div>
     </div>
     <!-- modal END -->
-
-    <script src="./js/swiper-bundle.min.js"></script>
+    
     <script src="./js/just-validate.production.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
