@@ -1,3 +1,28 @@
+let currentModal;
+let modalDialogue;
+let successModal = document.querySelector("#success-modal");
+
+const modalButtons = document.querySelectorAll("[data-toggle=modal]");
+modalButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    currentModal = document.querySelector(button.dataset.target);
+    currentModal.classList.toggle("is-open");
+    modalDialogue = currentModal.querySelector(".modal-dialogue");
+    currentModal.addEventListener("click", (event) => {
+      if (!event.composedPath().includes(modalDialogue)) {
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
+});
+document.addEventListener("keyup", (event) => {
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    currentModal.classList.toggle("is-open");
+  }
+});
+
+// form validation
 const validationPhone = new JustValidate("form", {
   errorFieldCssClass: "is-invalid",
   errorLabelStyle: {
@@ -34,7 +59,15 @@ validationPhone
       }).then((response) => {
         if (response.ok) {
           thisForm.reset();
-          alert("Форма отправлена!");
+          currentModal.classList.remove("is-open");
+          successModal.classList.add("is-open");
+          currentModal = successModal;
+          modalDialogue = currentModal.querySelector(".modal-dialogue");
+          currentModal.addEventListener("click", (event) => {
+            if (!event.composedPath().includes(modalDialogue)) {
+              currentModal.classList.remove("is-open");
+            }
+          });
         } else {
           alert("Ошибка. Текст ошибки: ".response.statusText);
         }
@@ -75,7 +108,15 @@ validationModalPhone
       }).then((response) => {
         if (response.ok) {
           thisForm.reset();
-          alert("Форма отправлена!");
+          currentModal.classList.remove("is-open");
+          successModal.classList.add("is-open");
+          currentModal = successModal;
+          modalDialogue = currentModal.querySelector(".modal-dialogue");
+          currentModal.addEventListener("click", (event) => {
+            if (!event.composedPath().includes(modalDialogue)) {
+              currentModal.classList.remove("is-open");
+            }
+          });
         } else {
           alert("Ошибка. Текст ошибки: ".response.statusText);
         }
@@ -109,7 +150,15 @@ validationEmail
       }).then((response) => {
         if (response.ok) {
           thisForm.reset();
-          alert("Форма отправлена!");
+          currentModal.classList.remove("is-open");
+          successModal.classList.add("is-open");
+          currentModal = successModal;
+          modalDialogue = currentModal.querySelector(".modal-dialogue");
+          currentModal.addEventListener("click", (event) => {
+            if (!event.composedPath().includes(modalDialogue)) {
+              currentModal.classList.remove("is-open");
+            }
+          });
         } else {
           alert("Ошибка. Текст ошибки: ".response.statusText);
         }

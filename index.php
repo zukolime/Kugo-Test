@@ -294,7 +294,7 @@
                   <p class="benifit-text">Проверите лучшие самокаты в деле</p>
                 </div>
               </div>
-              <button type="submit" class="button button-sign-up">Записаться</button>
+              <button type="submit" class="button button-sign-up" data-toggle="modal" data-target="#preorder-modal">Записаться</button>
             </div>
           </div>
         </div>
@@ -488,7 +488,7 @@
                       </button>
                     </div>
                   </div>
-                  <button type="submit" class="button card-button-sign-up">
+                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal">
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -553,7 +553,7 @@
                       </button>
                     </div>
                   </div>
-                  <button type="submit" class="button card-button-sign-up">
+                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal">
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -618,7 +618,7 @@
                       </button>
                     </div>
                   </div>
-                  <button type="submit" class="button card-button-sign-up">
+                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal">
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -683,7 +683,7 @@
                       </button>
                     </div>
                   </div>
-                  <button type="submit" class="button card-button-sign-up">
+                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal">                     
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -782,7 +782,11 @@
                     name="user_email"
                     class="input input-email"
                     placeholder="Введите Ваш email">
-                  <button type="submit" class="button button-sign-up button-submit-by-email">
+                  <button 
+                    type="submit" 
+                    class="button button-sign-up button-submit-by-email" 
+                    data-target="#success-modal" 
+                    data-toggle="modal" >
                     Подписаться
                   </button>
                 </div>
@@ -1134,12 +1138,13 @@
 
     <!-- modal START -->
     <div class="modal" id="preorder-modal">
-      <div class="close-button">
+      <div class="modal-dialogue">
+        <div class="close-button">
         <a
           href="#"
           class="modal-close"
-          data-toggle="modal"
-          data-target="#preorder-modal"
+          data-toggle="modal" 
+          data-target="#preorder-modal"       
         >
           <svg class="close-icon">
             <use href="./img/sprite.svg#close"></use>
@@ -1210,8 +1215,38 @@
           </picture>
         </div>
       </div>
+      </div>
     </div>
     <!-- modal END -->
+
+    <!-- modal-success START -->
+     <div class="modal modal-success" id="success-modal">
+      <div class="modal-dialogue">
+        <div class="close-button">
+          <a
+            href="#"
+            class="modal-close"
+            data-target="#success-modal"
+            data-toggle="modal"          
+          >
+            <svg class="close-icon">
+              <use href="./img/sprite.svg#close"></use>
+            </svg>
+          </a>
+        </div>
+      <div class="modal-container">
+        <div class="modal-content">
+          <div class="modal-dialog__top">
+            <h3 class="modal-title">Спасибо за заявку!</h3>
+            <p class="modal-text">
+              Менеджер свяжется с вами в течение 5 минут.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- modal-success END -->
     
     <script src="./js/just-validate.production.min.js"></script>
     <script src="./js/main.js"></script>

@@ -1041,7 +1041,6 @@ input:focus {
 .input-email__box {
   position: relative;
   display: flex;
-  align-items: center;
   gap: 1.25rem;
 }
 
@@ -1361,11 +1360,40 @@ footer {
 
 /* modal START */
 .modal {
-  display: none;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 45, 51, 0.5);
+  z-index: 10;
+  transition: opacity 0.2s;
+}
+
+.modal.is-open .modal-dialogue {
+  transform: translateY(0);
+}
+
+.modal.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialogue {
+  background-color: #fff;
   max-width: 49.375rem;
   min-height: 36.075rem;
   border-radius: 5px;
   padding: 0.875rem;
+  margin: auto;
+  position: relative;
+  transform: translateY(-20%);
+  transition: transform 0.3s;
 }
 
 .close-button {
@@ -1387,7 +1415,7 @@ footer {
 .modal-container {
   display: flex;
   max-width: 43rem;
-  margin: 0 auto;
+  margin: 0 2.5rem;
   gap: 1.25rem;
 }
 
@@ -1426,9 +1454,6 @@ footer {
   font-weight: 400;
   line-height: normal;
 }
-
-/* .modal-dialog__bottom {
-} */
 
 .modal-text-question {
   color: #5d6c7b;
@@ -1513,6 +1538,37 @@ footer {
 
 /* modal END */
 
+/* modal-success START */
+.modal-success {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 45, 51, 0.5);
+  z-index: 10;
+  transition: opacity 0.2s;
+}
+
+.modal-success .modal-dialogue {
+  min-height: 12rem;
+}
+
+.modal-success .modal-dialog__top {
+  margin: 0;
+}
+
+.modal-success.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+/* modal-success START */
+
 @media (max-width: 1750px) {
   html {
     font-size: 18px;
@@ -1521,6 +1577,10 @@ footer {
   .section-cta__form {
     padding-top: 3.6rem;
     padding-bottom: 2.775rem;
+  }
+
+  .just-validate-error-label {
+    bottom: 9.1rem;
   }
 }
 
@@ -1554,6 +1614,10 @@ footer {
 
   .section-cta__form__picture img {
     max-height: 30.8rem;
+  }
+
+  .just-validate-error-label {
+    bottom: 11.1rem;
   }
 }
 
@@ -1956,6 +2020,14 @@ footer {
     padding-top: 2.6rem;
     padding-bottom: 3.975rem;
   }
+
+  .just-validate-error-label {
+    bottom: 10.4rem;
+  }
+
+  .input-email__box .just-validate-error-label {
+    bottom: 4.4rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -2050,6 +2122,16 @@ footer {
     width: 50%;
   }
 
+  .just-validate-error-label {
+    bottom: 15rem;
+    left: 0;
+  }
+
+  .checkbox-agreement__wrapper .just-validate-error-label {
+    left: 0rem;
+    bottom: 1.8rem;
+  }
+
   .input {
     max-width: 18.7375rem;
   }
@@ -2100,9 +2182,9 @@ footer {
     width: 8rem;
   }
 
-  .modal {
+  .modal-dialogue {
     max-width: 29.375rem;
-    min-height: 100%;
+    min-height: 33.075rem;
   }
 
   .modal-container {
@@ -2119,6 +2201,10 @@ footer {
 
   .modal-title {
     width: 100%;
+  }
+
+  .modal-form-button {
+    max-width: 18.775rem;
   }
 
   .modal-image img {
