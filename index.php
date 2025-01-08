@@ -17,8 +17,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <object type="image/svg+xml" data="sprite.svg"></object>
+    <link rel="stylesheet" href="./css/style.css" />    
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>KUGOO – Тест-драйв</title>    
     <script>
       !(function (n, e, s) {
         function o(n, e) {
@@ -97,7 +114,7 @@
         n.Modernizr = Modernizr;
       })(window, document);
     </script>
-    <title>KUGOO – Тест-драйв</title>
+    
   </head>
   <body>
     <!-- HEADER START -->
@@ -138,7 +155,7 @@
     <!-- HEADER END -->
 
     <main class="main">
-      <section class="mobile__section-controls">
+      <div class="mobile__section-controls">
         <div class="container">
           <div class="section-controls__wrapper">
             <div class="logo section-search--logo">
@@ -170,25 +187,25 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="mobile__section-search">
+      </div>
+      <div class="mobile__section-search">
         <div class="container">
           <div class="section-search__wrapper">
-            <button class="button button-burger">
+            <a href="#" class="button button-burger">
               <div class="toggle-burger">
                 <div class="toggle-burger__line"></div>
                 <div class="toggle-burger__line"></div>
                 <div class="toggle-burger__line"></div>
               </div>
               <span class="button-burger__text">Каталог</span>
-            </button>
+            </a>
             <div class="search-box">
               <input
                 class="search-input"
                 type="text"
                 placeholder="Искать самокат KUGO"
               />
-              <button class="search-button">
+              <button class="search-button" aria-label="Поиск">
                 <svg class="search-icon" width="16" height="16">
                   <use href="./img/sprite.svg#search"></use>
                 </svg>
@@ -196,29 +213,29 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- section-search START -->
-      <section class="section-search">
+      <nav class="section-search">
         <div class="container">
           <div class="section-search__wrapper">
             <div class="logo section-search--logo">
               <a href="#">Kugoo</a>
             </div>
-            <button class="button button-burger">
+            <a href="#" class="button button-burger">
               <div class="toggle-burger">
                 <div class="toggle-burger__line"></div>
                 <div class="toggle-burger__line"></div>
                 <div class="toggle-burger__line"></div>
               </div>
               <span class="button-burger__text">Каталог</span>
-            </button>
+            </a>
             <div class="search-box">
               <input
                 class="search-input"
                 type="text"
                 placeholder="Искать самокат KUGO"
               />
-              <button class="search-button">
+              <button class="search-button" aria-label="Поиск">
                 <svg class="search-icon" width="16" height="16">
                   <use href="./img/sprite.svg#search"></use>
                 </svg>
@@ -251,7 +268,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </nav>
       <!-- section-search END -->
 
       <!-- section-search START -->
@@ -294,7 +311,7 @@
                   <p class="benifit-text">Проверите лучшие самокаты в деле</p>
                 </div>
               </div>
-              <button type="submit" class="button button-sign-up" data-toggle="modal" data-target="#preorder-modal">Записаться</button>
+              <button type="submit" class="button button-sign-up" data-toggle="modal" data-target="#preorder-modal" aria-label="Записаться">Записаться</button>
             </div>
           </div>
         </div>
@@ -307,9 +324,9 @@
           <div class="section-test-drive-practice__content">
             <div class="test-drive-practice__image">
               <picture class="test-drive-practice__picture">
-                <source type="image/webp" srcset="./img/E-Scooters_Thumb.jpg" />
-                <source type="image/jpg" srcset="/img/E-Scooters_Thumb.webp" />
-                <img src="E-Scooters_Thumb.jpg" />
+                <source type="image/webp" srcset="./img/E-Scooters_Thumb.webp" />
+                <source type="image/jpg" srcset="/img/E-Scooters_Thumb.jpg" />
+                <img src="E-Scooters_Thumb.jpg" alt="E-Scooters_Thumb" />
               </picture>
             </div>
             <h2 class="section-title section-test-drive-practice__title">
@@ -324,28 +341,28 @@
                 <svg class="check-icon">
                   <use href="./img/sprite.svg#checkcircle"></use>
                 </svg>
-                <span class="item-bold">Понять</span>&nbspподходит ли вам
+                <span class="item-bold">Понять</span>&nbsp;подходит ли вам
                 конкретная модель;
               </li>
               <li class="test-drive-practice__item">
                 <svg class="check-icon">
                   <use href="./img/sprite.svg#checkcircle"></use>
                 </svg>
-                <span class="item-bold">Испытать</span>&nbspсамокат в «реальной
+                <span class="item-bold">Испытать</span>&nbsp;самокат в «реальной
                 жизни»;
               </li>
               <li class="test-drive-practice__item">
                 <svg class="check-icon">
                   <use href="./img/sprite.svg#checkcircle"></use>
                 </svg>
-                <span class="item-bold">Оценить</span>&nbspудобство хранения и
+                <span class="item-bold">Оценить</span>&nbsp;удобство хранения и
                 эксплуатации;
               </li>
               <li class="test-drive-practice__item">
                 <svg class="check-icon">
                   <use href="./img/sprite.svg#checkcircle"></use>
                 </svg>
-                <span class="item-bold">Узнать</span>&nbspреальные
+                <span class="item-bold">Узнать</span>&nbsp;реальные
                 характеристики и возможности модели.
               </li>
             </ul>
@@ -363,13 +380,13 @@
                 <picture class="learn__picture">
                   <source
                     type="image/webp"
-                    srcset="./img/E-Scooters_Thumb_Women.jpg"
+                    srcset="./img/E-Scooters_Thumb_Women.webp"
                   />
                   <source
                     type="image/jpg"
-                    srcset="/img/E-Scooters_Thumb_Women.webp"
+                    srcset="/img/E-Scooters_Thumb_Women.jpg"
                   />
-                  <img src="E-Scooters_Thumb_Women.jpg" />
+                  <img src="E-Scooters_Thumb_Women.jpg" alt="E-Scooters_Thumb_Women" />
                 </picture>
               </div>
               <h2 class="section-title section-learn__title">
@@ -434,8 +451,7 @@
               <div class="scooter-versions__card--image">
                 <div class="card-image__items">
                   <div class="badge-hit">ХИТ</div>
-                  <button class="add-to-compare-button">
-                    <svg class="compare-icon">
+                    <svg class="compare-icon" aria-label="Добавить в сравнение">
                       <use href="./img/sprite.svg#balance"></use>
                     </svg>
                   </button>
@@ -476,19 +492,19 @@
                       <p class="current-price">29 900 ₽</p>
                     </div>
                     <div class="buttons-wrapper">
-                      <button class="scooter-versions__card--button">
+                      <button class="scooter-versions__card--button" aria-label="Корзина">
                         <svg class="cart-icon-2">
                           <use href="./img/sprite.svg#shopping-cart-2"></use>
                         </svg>
                       </button>
-                      <button class="scooter-versions__favorite--button">
+                      <button class="scooter-versions__favorite--button" aria-label="Избранное">
                         <svg class="favorite-icon">
                           <use href="./img/sprite.svg#heart"></use>
                         </svg>
                       </button>
                     </div>
                   </div>
-                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal">
+                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal" aria-label="Записаться на тест-драйв">
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -499,7 +515,7 @@
               <div class="scooter-versions__card--image">
                 <div class="card-image__items">
                   <div class="badge-new">Новинка</div>
-                  <button class="add-to-compare-button">
+                  <button class="add-to-compare-button" aria-label="Добавить в сравнение">
                     <svg class="compare-icon">
                       <use href="./img/sprite.svg#balance"></use>
                     </svg>
@@ -541,19 +557,19 @@
                       <p class="current-price">29 900 ₽</p>
                     </div>
                     <div class="buttons-wrapper">
-                      <button class="scooter-versions__card--button">
+                      <button class="scooter-versions__card--button" aria-label="Добавить в корзину">
                         <svg class="cart-icon-2">
                           <use href="./img/sprite.svg#shopping-cart-2"></use>
                         </svg>
                       </button>
-                      <button class="scooter-versions__favorite--button">
+                      <button class="scooter-versions__favorite--button" aria-label="Добавить в избранное">
                         <svg class="favorite-icon">
                           <use href="./img/sprite.svg#heart"></use>
                         </svg>
                       </button>
                     </div>
                   </div>
-                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal">
+                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal" aria-label="Записаться на тест-драйв">
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -564,7 +580,7 @@
               <div class="scooter-versions__card--image">
                 <div class="card-image__items">
                   <div class="badge-hit">ХИТ</div>
-                  <button class="add-to-compare-button">
+                  <button class="add-to-compare-button" aria-label="Добавить в сравнение">
                     <svg class="compare-icon">
                       <use href="./img/sprite.svg#balance"></use>
                     </svg>
@@ -606,19 +622,19 @@
                       <p class="current-price">29 900 ₽</p>
                     </div>
                     <div class="buttons-wrapper">
-                      <button class="scooter-versions__card--button">
+                      <button class="scooter-versions__card--button" aria-label="Добавить в корзину">
                         <svg class="cart-icon-2">
                           <use href="./img/sprite.svg#shopping-cart-2"></use>
                         </svg>
                       </button>
-                      <button class="scooter-versions__favorite--button">
+                      <button class="scooter-versions__favorite--button" aria-label="Добавить в избранное">
                         <svg class="favorite-icon">
                           <use href="./img/sprite.svg#heart"></use>
                         </svg>
                       </button>
                     </div>
                   </div>
-                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal">
+                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal" aria-label="Записаться на тест-драйв">
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -629,7 +645,7 @@
               <div class="scooter-versions__card--image">
                 <div class="card-image__items">
                   <div class="badge-new">Новинка</div>
-                  <button class="add-to-compare-button">
+                  <button class="add-to-compare-button" aria-label="Добавить в сравнение">
                     <svg class="compare-icon">
                       <use href="./img/sprite.svg#balance"></use>
                     </svg>
@@ -671,19 +687,19 @@
                       <p class="current-price">29 900 ₽</p>
                     </div>
                     <div class="buttons-wrapper">
-                      <button class="scooter-versions__card--button">
+                      <button class="scooter-versions__card--button" aria-label="Добавить в корзину">
                         <svg class="cart-icon-2">
                           <use href="./img/sprite.svg#shopping-cart-2"></use>
                         </svg>
                       </button>
-                      <button  class="scooter-versions__favorite--button">
+                      <button  class="scooter-versions__favorite--button" aria-label="Добавить в избранное">
                         <svg class="favorite-icon">
                           <use href="./img/sprite.svg#heart"></use>
                         </svg>
                       </button>
                     </div>
                   </div>
-                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal">                     
+                  <button type="submit" class="button card-button-sign-up" data-toggle="modal" data-target="#preorder-modal" aria-label="Записаться на тест-драйв">                     
                     Записаться на тест-драйв
                   </button>
                 </div>
@@ -718,7 +734,7 @@
                     placeholder="+7 (___) __ - __ - __"
                   />
                   <button type="submit"
-                    class="button card-button-sign-up card-button-sign-up-cta"
+                    class="button card-button-sign-up card-button-sign-up-cta" aria-label="Оставить заявку на тест-драйв"
                   >
                     Оставить заявку на тест-драйв
                   </button>
@@ -730,6 +746,7 @@
                     type="checkbox"
                     name="agree"
                     value="yes"
+                    aria-label="checkbox"
                     checked
                     required
                   />
@@ -753,7 +770,7 @@
                     type="image/jpeg"
                     srcset="./img/portrait-cheerful.jpg"
                   />
-                  <img src="./img/portrait-cheerful.jpg" />
+                  <img src="./img/portrait-cheerful.jpg" alt="portrait-cheerful" />
                 </picture>
               </div>
             </div>
@@ -784,9 +801,9 @@
                     placeholder="Введите Ваш email">
                   <button 
                     type="submit" 
-                    class="button button-sign-up button-submit-by-email" 
-                    data-target="#success-modal" 
-                    data-toggle="modal" >
+                    class="button button-sign-up button-submit-by-email"
+                    aria-label="Подписаться" 
+                    >
                     Подписаться
                   </button>
                 </div>
@@ -873,8 +890,8 @@
                   <a href="tel:+78005055461" class="contacts-info__inner--phone"
                     >+7 (800) 505-54-61</a
                   >
-                  <time class="contacts-info__inner--timing"
-                    >Пн-Вс 10:00 - 20:00</time
+                  <span class="contacts-info__inner--timing"
+                    >Пн-Вс 10:00 - 20:00</span
                   >
                 </div>
                 <div class="contacts-info__inner">
@@ -882,8 +899,8 @@
                   <a href="tel:+74993507692" class="contacts-info__inner--phone"
                     >+7 (499) 350-76-92</a
                   >
-                  <time class="contacts-info__inner--timing"
-                    >Пн-Вс 10:00 - 20:00</time
+                  <span class="contacts-info__inner--timing"
+                    >Пн-Вс 10:00 - 20:00</span
                   >
                 </div>
               </div>
@@ -968,8 +985,8 @@
                   <a href="tel:+78005055461" class="contacts-info__inner--phone"
                     >+7 (800) 505-54-61</a
                   >
-                  <time class="contacts-info__inner--timing"
-                    >Пн-Вс 10:00 - 20:00</time
+                  <span class="contacts-info__inner--timing"
+                    >Пн-Вс 10:00 - 20:00</span
                   >
                 </div>
                 <div class="contacts-info__inner">
@@ -977,8 +994,8 @@
                   <a href="tel:+74993507692" class="contacts-info__inner--phone"
                     >+7 (499) 350-76-92</a
                   >
-                  <time class="contacts-info__inner--timing"
-                    >Пн-Вс 10:00 - 20:00</time
+                  <span class="contacts-info__inner--timing"
+                    >Пн-Вс 10:00 - 20:00</span
                   >
                 </div>
               </div>
@@ -1004,16 +1021,10 @@
             </div>
             <div class="footer-middle__mobile-stores--buttons">
               <a href="#" class="mobile-store-button googleplay-button">
-                <img src="./img/icons/google-play.svg" alt="google-play" />
-                <!-- <svg class="store-icon googleplay-icon">
-                  <use href="./img/sprite.svg#google-play"></use>
-                </svg> -->
+                <img src="./img/icons/google-play.svg" alt="google-play" />                
               </a>
               <a href="#" class="mobile-store-button apple-store-button">
-                <img src="./img/icons/apple-store.svg" alt="apple-store" />
-                <!-- <svg class="store-icon apple-store-icon">
-                  <use href="./img/sprite.svg#app-store"></use>
-                </svg> -->
+                <img src="./img/icons/apple-store.svg" alt="apple-store" />                
               </a>
             </div>
             <div class="footer-middle__sociales--buttons">
@@ -1179,7 +1190,7 @@
               </div>
 
               <div class="modal-form-footer">
-                <button type="submit" class="button modal-form-button">
+                <button type="submit" class="button modal-form-button" aria-label="Оформить предзаказ">
                   Оформить предзаказ
                 </button>
                 <div
@@ -1191,6 +1202,7 @@
                     type="checkbox"
                     name="agree"
                     value="yes"
+                    aria-label="checkbox"
                     checked
                     required
                   />
@@ -1211,7 +1223,7 @@
           <picture class="modal-picture">
             <source type="image/webp" srcset="img/modal-image.webp" />
             <source type="image/jpeg" srcset="img/modal-image.jpg" />
-            <img src="img/modal-image.jpg" />
+            <img src="img/modal-image.jpg" alt="modal-image" />
           </picture>
         </div>
       </div>
